@@ -9,14 +9,21 @@ interface  Point{
 }
 
 class Cool {
-    constructor(public user:User){
+    private names: ['nate', 'jeff', 'walter'];
 
+    constructor(){
+
+    }
+    getName(i){
+        return this.names[i];
     }
 }
 
 class Users extends Cool{
     constructor(public user:User){
-        super(user);
+        super();
+        var name = this.getName(1);
+        console.log(name);
     }
 }
 

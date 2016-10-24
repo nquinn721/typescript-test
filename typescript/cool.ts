@@ -1,0 +1,4 @@
+class Cool{
+    getName (i){
+    }
+}
